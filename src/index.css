@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color: #3fbbc0;
+    --backcolor: color-mix(in srgb, #ffff, transparent 10%)
+}
+
+a:hover {
+    color: #3fbbc0 !important;
+}
+
+.hover-card:hover {
+    filter: drop-shadow(0px 0px 10px #3fbbc0) !important;
+}
+
+.section-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-title span {
+    width: 5%;
+    height: 3px;
+    background: #3fbbc0;
+    margin: 15px 0px;
+}
+
+.icon-card {
+    color: var(--color);
+    font-size: 42px;
+    line-height: 0;
+    margin-right: 20px;
+}
+
+.HH-span {
+    display: block;
+    width: 15%;
+    height: 3px;
+    background: #3fbbc0;
+    margin: 15px 0px;
+}
+
+.icon-card2 {
+    color: var(--color);
+    font-size: 42px;
+    line-height: 0;
+    margin-right: 20px;
+    box-shadow: 0px 1px 15px gray;
+    padding: 9px 9px;
+    border-radius: 5px;
+}
+
+.HH-icon {
+    color: var(--color);
+    margin: 0 auto;
+    font-size: 32px;
+    box-shadow: 0px 0 25px rgba(0, 0, 0, 0.1);
+    padding: 15px 25px 15px 25px;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+.border-hover:hover{
+    border-right: 1px solid var(--color);
+}
+
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    display: flex !important;
+    justify-content: space-around !important;
+}
+
+.contact-icon{
+    font-size: xx-large;
+    color: #3fbbc0;
+    border: 2px dashed;
+    border-radius: 50%;
+    padding: 0px 11px 5px 12px;
+    opacity: 0.6;
+}
+
+ul{
+    list-style: none;
+}
+ul li a{
+    cursor: pointer;
+}
+ul li {
+    margin: 12px 0px;
+}
+.social-links-footer a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid;
+    font-size: 16px;
+    color: black;
+    margin-right: 10px;
+}
+.footer-logo{
+    color: #555555;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+footer{
+    background-color: #f7fcfc;
+}
+
+@media screen and (max-width:992px) {
+    .carousel-caption{
+        font-size: medium !important;
+    }
+    .top-nav{
+        display: none;
+    }
+    .AboutUsCards{
+        display: flex;
+        flex-direction: column;
+    }
+    .AboutUsCard{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width:400px){
+    .carousel-caption{
+        font-size: medium !important;
+        padding: 15px !important;
+    }
+    .top-nav{
+        display: none !important;
+    }
+    .AboutUsCards{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .AboutUsCard{
+        width: 100% !important;
+    }
+}
